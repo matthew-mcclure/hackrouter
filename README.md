@@ -42,7 +42,7 @@ https://hackrouter.herokuapp.com/marketplace
 **GET**
 ```json
 {
-        "\_id": "5a6324f8836d830c80f3ad99",
+        "_id": "5a6324f8836d830c80f3ad99",
         "mediaReference": {
             "info": {
                 "creator": "Taylor Swift",
@@ -57,11 +57,11 @@ https://hackrouter.herokuapp.com/marketplace
                 "itemMaxQuantity": 1000000,
                 "productId": "123taylor"
             },
-            "\_id": "5a631b9641ce5042dc3a4a96",
-            "\_\_v": 0
+            "_id": "5a631b9641ce5042dc3a4a96",
+            "__v": 0
         },
         "price": 100,
-        "\_\_v": 0
+        "__v": 0
     }
 ```
 **POST**
