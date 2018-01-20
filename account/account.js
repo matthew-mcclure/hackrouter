@@ -1,5 +1,4 @@
 const express = require('express')
-// let Media = require('mongoose').model('Media').schema
 require('mongoose')
 let Media = require('../models/media-schema')
 
@@ -9,7 +8,10 @@ module.exports = {
 }
 
 function getLibrary (req, res, next) {
-    res.send('beep boop look at all your T Swift')
+    Media.find().exec((err, result) => {
+        response = result
+        res.send(response)
+    })
 }
 
 function postMedia (req, res, next) {
@@ -18,6 +20,7 @@ function postMedia (req, res, next) {
             creator: 'Taylor Swift',
             duration: 52,
             genre: 'Pop',
+            imageUrl: '',
             mediaType: 'Album',
             title: 'Reputation',
             year: 2018,
@@ -28,6 +31,6 @@ function postMedia (req, res, next) {
             productId: '123taylor',
         }
     })
-    mediaToAdd.save( function (err) { if (err) console.log('Error on save!')})
+    mediaToAdd.save( (err) => { if (err) console.log('Error on save!')})
     res.send('nom nom nom thanks for the library additions')
 }

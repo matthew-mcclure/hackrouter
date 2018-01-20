@@ -4,6 +4,7 @@ let MediaSchema = new mongoose.Schema({
     info: {
         creator: String,duration: Number,
         genre: String,
+        imageUrl: String,
         mediaType: String,
         title: String,
         year: Number,
