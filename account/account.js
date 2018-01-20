@@ -8,9 +8,10 @@ module.exports = {
 }
 
 function getLibrary (req, res, next) {
-    Media.find().exec((err, result) => {
-        response = result
-        res.send(response)
+    Media.find()
+        .exec((err, result) => {
+            response = result
+            res.send(response)
     })
 }
 
@@ -31,6 +32,7 @@ function postMedia (req, res, next) {
             productId: '123taylor',
         }
     })
+    
     mediaToAdd.save( (err) => { if (err) console.log('Error on save!')})
     res.send('nom nom nom thanks for the library additions')
 }

@@ -1,4 +1,5 @@
 const bodyParser = require('body-parser')
+const marketplace = require('./models/marketplace-schema')
 const media = require('./models/media-schema')
 const methodOverride = require('method-override')
 const mongodbUriString = process.env.MONGODB_URI || 'mongodb://localhost/atthackathon';
