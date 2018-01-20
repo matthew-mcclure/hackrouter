@@ -1,11 +1,27 @@
 # hackrouter
 
+## Account
+
 **GET Account Library:** This will return an array of media attached to the account
 https://hackrouter.herokuapp.com/account/library
 
 
 **POST Media to Account:** This accepts the Media Data Shape below and will return a confirmation message
 https://hackrouter.herokuapp.com/account/library
+
+
+
+## Marketplace
+
+**GET Marketplace:** This will return an array of the GET Marketplace Data Shape above
+https://hackrouter.herokuapp.com/marketplace
+
+**POST Media to Marketplace:** This accepts the POST Marketplace Data above
+https://hackrouter.herokuapp.com/marketplace
+
+
+
+## Data Formats
 
 **Media Data Shape:**
 ```json
@@ -26,16 +42,6 @@ https://hackrouter.herokuapp.com/account/library
     }
 }
 ```
-
-
-
-
-
-**GET Marketplace:** This will return an array of the GET Marketplace Data Shape above
-https://hackrouter.herokuapp.com/marketplace
-
-**POST Media to Marketplace:** This accepts the POST Marketplace Data above
-https://hackrouter.herokuapp.com/marketplace
 
 
 **Marketplace Data Shapes:**
