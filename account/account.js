@@ -4,7 +4,7 @@ let Media = require('../models/media-schema')
 
 module.exports = {
     getLibrary,
-    postMedia
+    addMedia
 }
 
 function getLibrary (req, res, next) {

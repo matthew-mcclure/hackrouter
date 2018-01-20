@@ -4,7 +4,7 @@ let Marketplace = require('../models/marketplace-schema')
 
 module.exports = {
     getAll,
-    postMedia
+    sellMedia
 }
 
 function getAll (req, res, next) {
