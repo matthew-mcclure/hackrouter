@@ -13,10 +13,10 @@ https://hackrouter.herokuapp.com/account/library
 
 ## Marketplace
 
-**GET Marketplace:** This will return an array of the GET Marketplace Data Shape above
+**GET Marketplace:** This will return an array of the GET Marketplace Data Shape below
 https://hackrouter.herokuapp.com/marketplace
 
-**POST Media to Marketplace:** This accepts the POST Marketplace Data above
+**POST Media to Marketplace:** This accepts the POST Marketplace Data below
 https://hackrouter.herokuapp.com/marketplace
 
 
