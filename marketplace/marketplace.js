@@ -8,21 +8,32 @@ module.exports = {
 }
 
 function getAll (req, res, next) {
-    Marketplace.find()
-        .populate('mediaReference')
-        .exec((err, result) => {
-            response = result
-            res.send(response)
-    })
-    // res.send('beep boop look at my wares')
+    try{
+        Marketplace.find()
+            .populate('mediaReference')
+            .exec((err, result) => {
+                if (err) throw new Error(err.message)
+                response = result
+                res.send(response)
+        })
+    } catch (err) {
+        res.status(err.status || 500)
+        res.send(err.message)
+    }
 }
 
 function postMedia (req, res, next) {
-    let itemForSale = new Marketplace({
-        mediaReference: '5a631b9641ce5042dc3a4a96',
-        price: 100,
-    })
+    try {
+        if (!req.body || !req.body.mediaReference || !req.body.price)
+            throw new Error('mediaReference or price missing from body')
 
-    itemForSale.save( (err) => { if (err) console.log('Error on save!')})
-    res.send('nom nom nom thanks for the marketplace additions')
+        let itemForSale = new Marketplace(req.body)
+
+        itemForSale.save( (err) => { if (err) throw new Error(err.message) })
+        res.send('nom nom nom thanks for the marketplace additions')
+
+    } catch (err) {
+        res.status(err.status || 500)
+        res.send(err.message)
+    }
 }
