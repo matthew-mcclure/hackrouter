@@ -21,7 +21,7 @@ function getLibrary (req, res, next) {
     }
 }
 
-function postMedia (req, res, next) {
+function addMedia (req, res, next) {
     try {
         let mediaToAdd = new Media (req.body)
         mediaToAdd.save( (err) => { if (err) throw new Error(err.message) })

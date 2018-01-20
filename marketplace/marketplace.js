@@ -22,7 +22,7 @@ function getAll (req, res, next) {
     }
 }
 
-function postMedia (req, res, next) {
+function sellMedia (req, res, next) {
     try {
         if (!req.body || !req.body.mediaReference || !req.body.price)
             throw new Error('mediaReference or price missing from body')

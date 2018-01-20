@@ -2,6 +2,6 @@ const router = require('express').Router()
 const Marketplace = require('./marketplace')
 
 router.get('/', Marketplace.getAll)
-router.post('/', Marketplace.postMedia)
+router.post('/', Marketplace.sellMedia)
 
 module.exports = router
