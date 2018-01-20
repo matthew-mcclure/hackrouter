@@ -45,6 +45,7 @@ https://hackrouter.herokuapp.com/marketplace
 
 
 **Marketplace Data Shapes:**
+
 **GET**
 ```json
 {
@@ -70,6 +71,7 @@ https://hackrouter.herokuapp.com/marketplace
         "__v": 0
     }
 ```
+
 **POST**
 ```json
 {
