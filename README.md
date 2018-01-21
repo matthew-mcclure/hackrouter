@@ -1,8 +1,8 @@
-# hackrouter
+# Swap
 
 ## More Info
 
-For more information and background on the project, please see the [whitepaper](https://github.com/matthew-mcclure/hackrouter/blob/master/whitePaper.md) or the [application flow chart](Presentation1.pptx)
+For more information and background on the project, please see the Swap [whitepaper](https://github.com/matthew-mcclure/hackrouter/blob/master/whitePaper.md) or the [application flow chart](Presentation1.pptx)
 
 ## Account
 
