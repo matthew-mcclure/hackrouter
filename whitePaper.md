@@ -18,3 +18,4 @@ User logs in
 User browses to a movie to transfer
 User lends or transfers a movie to another user
 # 1.5 Future Development
+Loyalty tokens using ERC-20 smart contracts. Customers using Swap tokens will be incentivized by providing a discount when using tokens. 
