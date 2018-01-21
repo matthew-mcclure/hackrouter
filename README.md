@@ -1,5 +1,9 @@
 # hackrouter
 
+## More Info
+
+For more information and background on the project, please see the [whitepaper](https://github.com/matthew-mcclure/hackrouter/blob/master/whitePaper.md) or the [application flow chart](Presentation1.pptx)
+
 ## Account
 
 **GET Account Library:** This will return an array of media attached to the account
